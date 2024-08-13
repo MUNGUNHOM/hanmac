@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>한맥 HANMAC</title>
+
+    <!-- 외부 CSS 파일 링크 -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header id="header_container">
+      <div class="logo">
+        <img src="../img/20240729_013644 (1).png" alt="HANMAC Logo" />
+      </div>
+      <nav id="menu_container">
+        <div class="nav-container">
+          <ul class="main-menu">
+            <li>
+              <a href="#">한맥(HANMAC)</a>
+              <ul class="submenu">
+                <li><a href="#">브랜드 이야기</a></li>
+                <li><a href="#">제품소개</a></li>
+                <li><a href="#">한맥 판매처 찾기</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">캠페인</a>
+              <ul class="submenu">
+                <li><a href="#">한맥의 부드러운 환상거품</a></li>
+                <li><a href="#">부드럽게 부드럽게 달라지다</a></li>
+                <li><a href="#">부드러운 회식</a></li>
+                <li><a href="#">전국 한맥 맛집</a></li>
+                <li><a href="#">한맥한상</a></li>
+                <li><a href="#">홈 레시피</a></li>
+                <li><a href="#">대한민국 대표라거</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">TV광고</a>
+              <ul class="submenu">
+                <li><a href="#">TV광고</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="social-links">
+        <a href="https://www.instagram.com/hanmac_official/" target="_blank">
+          <img src="../img/top_ins.png" alt="Instagram" />
+        </a>
+        <a
+          href="https://www.facebook.com/%ED%95%9C%EB%A7%A5-Hanmac-100125335233090/"
+          target="_blank"
+        >
+          <img src="../img/top_face.png" alt="Facebook" />
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCFRMEa0vlRfrgcQpnryE-TA"
+          target="_blank"
+        >
+          <img src="../img/top_you.png" alt="YouTube" />
+        </a>
+      </div>
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+    <section class="hero">
+      <img src="../img/20240704_082855.png" alt="Visual" />
+      <img
+        src="../img/new_tag02.png"
+        alt="NEW Banner"
+        class="new-banner"
+      />
+      <img
+        src="../img/new_tag02.png"
+        alt="NEW Banner Small"
+        class="new-banner-small"
+      />
+      <div class="additional-images">
+        <img src="../img/hanmac_typo01-1.png" alt="한맥 엑스트라" />
+        <img src="../img/hanmac_typo02-1.png" alt="크리미 생" />
+        <a
+          href="https://hanmac.ob.co.kr/hanmac/seller_2.php"
+          class="find-seller-button"
+          >한맥 판매처 찾기</a
+        >
+      </div>
+    </section>
+    <section class="image-section">
+      <img
+        src="../img/main_label7.png"
+        alt=""
+        class="label-img main-label"
+      />
+      <div class="sub-labels">
+        <img src="../img/main_label6.png" alt="" class="label-img" />
+        <img src="../img/main_label8.png" alt="" class="label-img" />
+      </div>
+    </section>
+    <section>
+      <img src="" alt="" />
+    </section>
+    <div class="menu-overlay">
+      <div class="close-btn" onclick="toggleMenu()">×</div>
+      <div class="menu-container">
+        <div class="menu-section first-menu-section">
+          <h4>한맥(HANMAC)</h4>
+          <div class="menu-links">
+            <a href="#">브랜드 이야기</a>
+            <a href="#">제품소개</a>
+            <a href="#">한맥판매처 찾기</a>
+          </div>
+        </div>
+        <div class="menu-section second-menu-section">
+          <h4>캠페인</h4>
+          <div class="menu-links">
+            <a href="#">한맥의 부드러운 환상거품</a>
+            <a href="#">부드럽게 부드럽게 달라지다</a>
+            <a href="#">부드러운 회식</a>
+            <a href="#">전국 한맥 맛집</a>
+            <a href="#">한맥한상</a>
+            <a href="#">홈 레시피</a>
+            <a href="#">대한민국 대표라거 프로젝트</a>
+          </div>
+        </div>
+        <div class="menu-section third-menu-section">
+          <h4>TV 광고</h4>
+          <div class="menu-links">
+            <a href="#">TV 광고</a>
+          </div>
+        </div>
+        <div class="menu-social-icons">
+          <a href="https://www.instagram.com/hanmac_official/" target="_blank">
+            <img src="../img/top_ins.png" alt="Instagram" />
+          </a>
+          <a
+            href="https://www.facebook.com/%ED%95%9C%EB%A7%A5-Hanmac-100125335233090/"
+            target="_blank"
+          >
+            <img src="../img/top_face.png" alt="Facebook" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCFRMEa0vlRfrgcQpnryE-TA"
+            target="_blank"
+          >
+            <img src="../img/top_you.png" alt="YouTube" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <section class="awards">
+      <div class="container">
+        <div class="line line1">200명의 셰프와</div>
+        <div class="line line1 no-animation">소믈리에의 선택</div>
+        <div class="line line2">벨기에 국제 식음료</div>
+        <div class="line line2 no-animation">품평회 3연속 수상</div>
+        <div class="line line3">대한민국 주류대상</div>
+        <div class="line line3 no-animation">대상 (일반 라거 부문)</div>
+        <div class="line4-group">
+          <div class="line line4">대한민국 국제 맥주대회</div>
+          <div class="line line4">2연속 수상</div>
+        </div>
+      </div>
+    </section>
+    <section class="beer-section">
+      <div class="beer-container">
+        <img src="../img/m_can3.png" alt="한맥 맥주" />
+        <div class="beer-text-overlay beer-text1">
+          100% 국내산 고품질 쌀로 완성
+        </div>
+        <div class="beer-line beer-line1"></div>
+        <div class="beer-circle beer-circle1"></div>
+        <div class="beer-text-overlay beer-text2">
+          대한민국을 대표하는<br />라거가 되고자 하는 의지와 포부
+        </div>
+        <div class="beer-line beer-line2"></div>
+        <div class="beer-circle beer-circle2"></div>
+        <div class="beer-text-overlay beer-text3">
+          OB의 오랜 양조기술을<br />바탕으로 만든 프리미엄 라거
+        </div>
+        <div class="beer-line beer-line3"></div>
+        <div class="beer-circle beer-circle3"></div>
+        <div class="beer-text-overlay beer-text4">
+          한맥의 고품질 쌀이 자라는<br />우리나라의 들판
+        </div>
+        <div class="beer-line beer-line4"></div>
+        <div class="beer-circle beer-circle4"></div>
+        <div class="beer-text-overlay beer-text5">한맥만의 부드러운 풍미</div>
+        <div class="beer-line beer-line5"></div>
+        <div class="beer-circle beer-circle5"></div>
+      </div>
+    </section>
+
+    <section class="video-container">
+      <video
+        class="pc_visual"
+        id="myVideo4"
+        width="1860"
+        height="815"
+        controls
+        preload="metadata"
+        loop
+        muted
+      >
+        <source
+          src="https://hanmac.ob.co.kr/resources/images/vod/main_vod.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="vod_img" id="vodImage">
+        <a
+          class="btn_play"
+          href="javascript:void(0);"
+          onclick="togglePlay()"
+        ></a>
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="second-content-section">
+      <div class="second-content-container">
+        <div class="second-content">
+          <div class="second-left-image">
+            <img src="../img/main_banner1 (1).jpg" alt="HANMAC Image" />
+          </div>
+          <div class="second-right-text">
+            <h1>차별화된 재료와 <br />제조 공정</h1>
+            <div class="paragraphs">
+              <p>
+                대한민국이 음미할 수 있는 부드러운 라거를 만들기 위해
+                대한민국 No.1 맥주회사 오비맥주에서 오랜 연구 끝에
+                개발했습니다. 한맥만의 부드러운 풍미는 엄선된 100% 국내산
+                고품질 쌀, 4단계 미세 여과과정, 그리고 더욱 긴 공정시간을
+                통해 탄생했습니다.
+              </p>
+              <p>*맥아 공정 대비 쌀 제조 공정 추가</p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+
+        <div class="second-content second-section">
+          <div class="second-left-text">
+            <h1>한국인의 <br />입맛과 취향 적극반영</h1>
+            <div class="paragraphs">
+              <p>
+                대한민국 대표라거 프로젝트, 한맥은 전국 소비자 테스트뿐만
+                아니라 정식 런칭 전 주류 업계 최초 파일럿 테스트를 통해
+                고객의 의견은 반영,품질을 완성시켰습니다.한맥은 계속해서
+                소비자들의 의견을 경청하여 대한민국을 부드럽게,만들고 더
+                나아가 자랑스러운 대한민국 대표라거가 되겠습니다
+              </p>
+            </div>
+          </div>
+          <div class="second-right-image">
+            <img src="../img/main_banner1 (1).jpg" alt="HANMAC Image" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="product-section">
+      <div class="product-header">
+        <div class="product-title">제품소개</div>
+        <div class="product-description">
+          거품으로 한번, 목넘김으로 또 한번,<br />
+          두번의 부드러움을 가진 한맥 (HANMAC)
+        </div>
+      </div>
+      <div class="product-container">
+        <div class="product-item">
+          <img src="/img/HANMAC_355C.png" alt="355ml 캔 한맥 맥주" />
+          <div class="product-caption">
+            <div class="product-text-left">캔</div>
+            <div class="product-text-right">355ml</div>
+          </div>
+        </div>
+        <div class="product-item">
+          <img src="/img/HANMAC_500C.png" alt="500ml 캔 한맥 맥주" />
+          <div class="product-caption">
+            <div class="product-text-right">500ml</div>
+          </div>
+        </div>
+        <div class="product-item">
+          <img src="/img/HANMAC_500B.png" alt="500ml 병 한맥 맥주" />
+          <div class="product-caption">
+            <div class="product-text-left">병</div>
+            <div class="product-text-right">500ml</div>
+          </div>
+        </div>
+        <div class="product-item">
+          <img src="/img/HANMAC_16P.png" alt="1.6L PET 한맥 맥주" />
+          <div class="product-caption">
+            <div class="product-text-left">PET</div>
+            <div class="product-text-right">1.6L</div>
+          </div>
+          <div class="can-orange-border"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <p>
+            HANMAC | 2021. c All Rights Reserved. |
+            <a href="#">Privacy Policy</a> |
+          </p>
+          <p><a href="#">Terms and Conditions</a></p>
+        </div>
+        <div class="footer-section footer-section-second">
+          <p>
+            상호명 : 오비맥주 주식회사 | 사업자 등록번호 : 126-81-32671 |
+            대표이사 : 벤마그다제이베르하르트 | 부서명 : 정보전략팀 |
+          </p>
+          <p>
+            책임자 : 박찬주 CISO | 전화번호 : (02)2149-5000 | 이메일 :
+            <a href="mailto:privacy@ob.co.kr">privacy@ob.co.kr</a>
+          </p>
+        </div>
+        <div class="footer-section footer-section-third">
+          <p>경고: 지나친 음주는 뇌졸중, 기억력 손상이나 치매를 유발합니다.</p>
+          <p>
+            임신 중 음주는 기형아 출생 위험을 높입니다. 만 19세 미만 컨텐츠
+            공유 금지.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-mobile">
+      <div class="footer-section">
+        <p>
+          HANMAC | 2021. c All Rights Reserved. |
+          <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a>
+        </p>
+      </div>
+      <div class="footer-section">
+        <p>상호명 : 오비맥주 주식회사 | 사업자 등록번호 : 126-81-32671 |</p>
+        <p>대표이사 : 벤마그다제이베르하르트 | 부서명 : 정보전략팀 |</p>
+        <p>책임자 : 박찬주 CISO | 전화번호 : (02)2149-5000 |</p>
+        <p>
+          이메일 :<a href="mailto:privacy@ob.co.kr">privacy@ob.co.kr</a>
+        </p>
+      </div>
+      <div class="footer-section">
+        <p>
+          경고: 지나친 음주는 뇌졸중, 기억력 손상이나 치매를 유발합니다.
+        </p>
+        <p>임신 중 음주는 기형아 출생 위험을 높입니다. 만 19세 미만 컨텐츠 공유 금지.</p>
+      </div>
+    </footer>
+
+    <!-- 연령 확인 섹션 -->
+    <section class="age-checker-section">
+      <div class="age-checker" id="ageChecker">
+        <div>
+          <h1>만19세 이상<br />음주 가능한 연령입니까?</h1>
+          <button id="yesButton">YES</button>
+          <button id="noButton">NO</button>
+          <div id="warning">
+            경고: 지나친 음주는 뇌졸중, 기억력 손상이나 치매를 유발합니다.<br />임신
+            중 음주는 기형아 출생 위험을 높입니다.
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="carousel">
+      <div class="carousel-item">
+        <img src="../img/main_seed.png" alt="Image 1" />
+      </div>
+      <div class="carousel-item">
+        <img src="../img/main_seed.png" alt="Image 2" />
+      </div>
+      <div class="carousel-item">
+        <img src="../img/main_seed.png" alt="Image 3" />
+      </div>
+      <div class="carousel-item">
+        <img src="../img/main_seed.png" alt="Image 4" />
+      </div>
+    </div>
+
+    <!-- 외부 JavaScript 파일 링크 -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
