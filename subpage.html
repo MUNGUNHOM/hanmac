@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한맥 HANMAC</title>
+    <!-- CSS 파일 링크 -->
+    <link rel="stylesheet" href="substyle.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header id="header_container">
+      <a href="index.html" class="logo">
+        <img src="img/20240729_013644 (1).png" alt="HANMAC Logo" />
+      </a>
+      <nav id="menu_container">
+        <div class="nav-container">
+          <ul class="main-menu">
+            <li>
+              <a href="#">한맥(HANMAC)</a>
+              <ul class="submenu">
+                <li><a href="#">브랜드 이야기</a></li>
+                <li><a href="#">제품소개</a></li>
+                <li><a href="#">한맥 판매처 찾기</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">캠페인</a>
+              <ul class="submenu">
+                <li><a href="#">한맥의 부드러운 환상거품</a></li>
+                <li><a href="#">부드럽게 부드럽게 달라지다</a></li>
+                <li><a href="#">부드러운 회식</a></li>
+                <li><a href="#">전국 한맥 맛집</a></li>
+                <li><a href="#">한맥한상</a></li>
+                <li><a href="#">홈 레시피</a></li>
+                <li><a href="#">대한민국 대표라거</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">TV광고</a>
+              <ul class="submenu">
+                <li><a href="#">TV광고</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="social-links">
+        <a href="https://www.instagram.com/hanmac_official/" target="_blank">
+          <img src="img/top_ins.png" alt="Instagram" />
+        </a>
+        <a
+          href="https://www.facebook.com/%ED%95%9C%EB%A7%A5-Hanmac-100125335233090/"
+          target="_blank"
+        >
+          <img src="img/top_face.png" alt="Facebook" />
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCFRMEa0vlRfrgcQpnryE-TA"
+          target="_blank"
+        >
+          <img src="img/top_you.png" alt="YouTube" />
+        </a>
+      </div>
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+
+    <div class="menu-overlay">
+      <div class="close-btn" onclick="toggleMenu()">×</div>
+      <div class="menu-container">
+        <div class="menu-section first-menu-section">
+          <h4>한맥(HANMAC)</h4>
+          <div class="menu-links">
+            <a href="#">브랜드 이야기</a>
+            <a href="#">제품소개</a>
+            <a href="#">한맥판매처 찾기</a>
+          </div>
+        </div>
+        <div class="menu-section second-menu-section">
+          <h4>캠페인</h4>
+          <div class="menu-links">
+            <a href="#">한맥의 부드러운 환상거품</a>
+            <a href="#">부드럽게 부드럽게 달라지다</a>
+            <a href="#">부드러운 회식</a>
+            <a href="#">전국 한맥 맛집</a>
+            <a href="#">한맥한상</a>
+            <a href="#">홈 레시피</a>
+            <a href="#">대한민국 대표라거 프로젝트</a>
+          </div>
+        </div>
+        <div class="menu-section third-menu-section">
+          <h4>TV 광고</h4>
+          <div class="menu-links">
+            <a href="#">TV 광고</a>
+          </div>
+        </div>
+        <div class="menu-social-icons">
+          <a href="https://www.instagram.com/hanmac_official/" target="_blank">
+            <img src="img/top_ins.png" alt="Instagram" />
+          </a>
+          <a
+            href="https://www.facebook.com/%ED%95%9C%EB%A7%A5-Hanmac-100125335233090/"
+            target="_blank"
+          >
+            <img src="img/top_face.png" alt="Facebook" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCFRMEa0vlRfrgcQpnryE-TA"
+            target="_blank"
+          >
+            <img src="img/top_you.png" alt="YouTube" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <main>
+      <section class="main-section">
+        <!-- 첫 번째 이미지 -->
+        <img
+          class="main-image"
+          src="img/foamparadise_banner.png"
+          alt="Hanmac Foam Paradise"
+        />
+
+        <!-- 텍스트 -->
+        <div class="main-text">
+          <h2>한맥의 부드러운 거품이 선사하는 환상적인 경험</h2>
+          <h1>한맥 거품도원</h1>
+        </div>
+
+        <div class="background-container">
+          <!-- 세 번째 이미지 -->
+          <img
+            class="third-image"
+            src="img/foamparadise_item1_2023_10_30.png"
+            alt="Hanmac Foam Paradise Item"
+          />
+
+          <!-- 네 번째 이미지 아래 텍스트 -->
+          <div class="footer-text">
+            <p>
+              2023년 11월, 부드러운 거품으로 새로워진<br />
+              한맥의 아이덴티티가 담긴 공간 <br /><strong class="highlighted">
+                '한맥 거품도원'</strong
+              >이 펼쳐집니다<br /><br />
+              이곳에선 한맥의 부드러운 환상거품을<br />
+              오감을 통해 직접 만나보실 수 있습니다<br /><br />
+              한맥이 선사하는 환상적인 경험으로<br /><strong
+                >잠시 현실을 잊고 부드러움 속에 빠져 보세요</strong
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Swiper 섹션 추가 -->
+      <section class="swiper-section">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/케러셀5.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/케러셀2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/케러셀3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/케러셀6.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/케러셀4.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/케러셀1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/케러셀7.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/케러셀8.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/케러셀9.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/케러셀10.jpg" alt="" />
+            </div>
+          </div>
+          <!-- Add Navigation -->
+          <div class="custom-button custom-button-prev">&#10094;</div>
+          <div class="custom-button custom-button-next">&#10095;</div>
+        </div>
+      </section>
+
+      <!-- 일정표 섹션 추가 -->
+      <section class="schedule-section">
+        <table class="schedule-table">
+          <tbody>
+            <tr>
+              <td class="date">11.06(월) - 11.12(일)</td>
+              <td>
+                <a href="#"
+                  ><span class="text">코엑스 메가박스</span>
+                  <span class="no-underline">(지하2층)</span></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="date">11.17(금) - 11.26(일)</td>
+              <td>
+                <a href="#"
+                  ><span class="text">여의도 IFC몰</span>
+                  <span class="no-underline">(노스아트리움 L3)</span></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="date">12.01(금) - 12.03(일)</td>
+              <td>
+                <a href="#"
+                  ><span class="text">스타필드 하남</span>
+                  <span class="no-underline">(1층 몰리스 아트리움)</span></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="date">12.08(금) - 12.10(일)</td>
+              <td>
+                <a href="#"
+                  ><span class="text">스타필드 고양</span>
+                  <span class="no-underline">(1층 고메아트리움)</span></a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <p>
+            HANMAC | 2021. c All Rights Reserved. |
+            <a href="#">Privacy Policy</a> |
+          </p>
+          <p><a href="#">Terms and Conditions</a></p>
+        </div>
+        <div class="footer-section footer-section-second">
+          <p>
+            상호명 : 오비맥주 주식회사 | 사업자 등록번호 : 126-81-32671 |
+            대표이사 : 벤마그다제이베르하르트 | 부서명 : 정보전략팀 |
+          </p>
+          <p>
+            책임자 : 박찬주 CISO | 전화번호 : (02)2149-5000 | 이메일 :
+            <a href="mailto:privacy@ob.co.kr">privacy@ob.co.kr</a>
+          </p>
+        </div>
+        <div class="footer-section footer-section-third">
+          <p>경고: 지나친 음주는 뇌졸중, 기억력 손상이나 치매를 유발합니다.</p>
+          <p>
+            임신 중 음주는 기형아 출생 위험을 높입니다. 만 19세 미만 컨텐츠 공유
+            금지.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-mobile">
+      <div class="footer-section">
+        <p>
+          HANMAC | 2021. c All Rights Reserved. |
+          <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a>
+        </p>
+      </div>
+      <div class="footer-section">
+        <p>상호명 : 오비맥주 주식회사 | 사업자 등록번호 : 126-81-32671 |</p>
+        <p>대표이사 : 벤마그다제이베르하르트 | 부서명 : 정보전략팀 |</p>
+        <p>책임자 : 박찬주 CISO | 전화번호 : (02)2149-5000 |</p>
+        <p>이메일 :<a href="mailto:privacy@ob.co.kr">privacy@ob.co.kr</a></p>
+      </div>
+      <div class="footer-section">
+        <p>경고: 지나친 음주는 뇌졸중, 기억력 손상이나 치매를 유발합니다.</p>
+        <p>
+          임신 중 음주는 기형아 출생 위험을 높입니다. 만 19세 미만 컨텐츠 공유
+          금지.
+        </p>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- JavaScript 파일 링크 -->
+    <script src="subscripts.js"></script>
+  </body>
+</html>
