@@ -1,0 +1,645 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 바디 스타일 */
+
+
+/* 헤더 스타일 */
+header {
+  background-color: #014d39;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  margin-left: -20px;
+}
+
+/* 로고 스타일 */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* 네비게이션 스타일 */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* 네비게이션 컨테이너 스타일 */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 메인 메뉴 스타일 */
+nav .main-menu {
+  display: flex;
+  list-style: none;
+  margin: 20px;
+  padding: 0;
+  gap: 300px;
+}
+
+/* 메인 메뉴 항목 스타일 */
+nav .main-menu li {
+  position: relative;
+}
+
+/* 메인 메뉴 링크 스타일 */
+nav .main-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 20px;
+}
+
+/* 서브메뉴 스타일 */
+nav .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #014d39;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  width: max-content;
+  z-index: 9;
+}
+
+/* 서브메뉴 항목 스타일 */
+nav .submenu li {
+  margin-bottom: 5px;
+}
+
+/* 서브메뉴 링크 스타일 */
+nav .submenu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+}
+
+/* 서브메뉴 표시 스타일 */
+nav .main-menu li:hover .submenu {
+  display: block;
+}
+
+/* 소셜 링크 스타일 */
+.social-links {
+  display: flex;
+  gap: 20px;
+  margin-left: auto;
+}
+
+/* 소셜 링크 이미지 스타일 */
+.social-links a img {
+  width: 30px;
+  height: 30px;
+}
+/* 서브메뉴가 보이는 동안 사라지지 않게 유지 */
+nav .main-menu li:hover .submenu,
+nav .submenu:hover {
+  display: block;
+}
+
+/* 서브메뉴 항목에 마우스를 올렸을 때 밑줄 표시 */
+nav .submenu li a:hover {
+  text-decoration: underline;
+}
+
+/* 햄버거 메뉴 스타일 */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+}
+
+.hamburger-menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.hamburger-menu.active .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-menu.active .bar2 {
+  opacity: 0;
+}
+
+.hamburger-menu.active .bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* 메뉴 오버레이 스타일 */
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #014d39;
+  z-index: 20;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.menu-overlay.active {
+  display: flex;
+}
+
+.menu-overlay .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 2em;
+  color: white;
+}
+
+.menu-overlay .menu-container {
+  padding: 20px;
+  background-color: #014d39;
+}
+
+.menu-overlay .menu-section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+
+.menu-overlay .menu-section h4 {
+  margin-bottom: 23px;
+  color: white;
+}
+
+.menu-overlay .menu-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-overlay .menu-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 13.3px;
+}
+
+.menu-overlay .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.menu-overlay .social-icons img {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+}
+
+
+
+@media (max-width: 1850px) {
+  nav .main-menu {
+    gap: 300px;
+  }
+
+  .logo {
+    left: 50px;
+  }
+}
+
+@media (max-width: 1453px) {
+  nav .main-menu {
+    gap: 200px;
+  }
+
+  .logo {
+    left: 40px;
+  }
+}
+
+@media (max-width: 1391px) {
+  nav .main-menu {
+    gap: 200px;
+  }
+
+  .logo {
+    left: 40px;
+  }
+}
+
+@media (max-width: 1242px) {
+  nav .main-menu {
+    gap: 100px;
+  }
+
+  .logo {
+    left: 30px;
+  }
+}
+
+@media (max-width: 1186px) {
+  nav .main-menu {
+    gap: 100px;
+  }
+
+  .logo {
+    left: 30px;
+  }
+}
+
+@media (max-width: 1180px) {
+  nav .main-menu {
+    gap: 50px;
+  }
+
+  .logo {
+    left: 30px;
+  }
+}
+
+@media (min-width: 1073px) {
+  .hamburger-menu,
+  .menu-overlay {
+    display: none;
+  }
+
+  nav .main-menu {
+    display: flex;
+  }
+
+  .hero .new-banner-small {
+    display: none;
+  }
+}
+
+/* 반응형 미디어 쿼리: 화면이 1072px 이하일 때 */
+@media (max-width: 1072px) {
+  header {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-right: 0;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .main-menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .social-links {
+    display: none;
+  }
+}
+
+/* footer 스타일 추가 */
+footer {
+  background-color: #00321f;
+  color: rgb(255, 255, 255, 0.5);
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  font-size: 13px;
+  width: 100%; /* 전체 너비 차지 */
+  max-width: none; /* 너비 제한 해제 */
+}
+
+.footer-content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding: 0 30px; /* 양옆 간격을 30px로 설정 */
+}
+
+
+.footer-section {
+  flex: 1;
+  padding: 0 30px 10px;
+  border-right: 1px solid rgb(255, 255, 255, 0.5);
+  line-height: 1.6;
+}
+
+.footer-section:last-child {
+  border-right: none;
+}
+
+.footer-section-second {
+  flex: 2;
+}
+
+.footer-content p,
+.footer-content a {
+  margin: 0;
+}
+
+.footer-content a {
+  color: white;
+  text-decoration: none;
+}
+
+.cookie {
+  margin-top: 20px;
+}
+
+.footer-section-third {
+  margin-left: 100px;
+}
+
+.footer-section-third p {
+  margin-left: -100px;
+}
+
+.footer-mobile {
+  display: none;
+}
+
+
+
+@media (max-width: 1072px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  .footer-section {
+    border-right: none;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  .footer-section-third {
+    margin-left: 0;
+  }
+
+  .footer-section-third p {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer-content {
+    display: none;
+  }
+
+  .footer-mobile {
+    display: block;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 12px;
+  }
+
+  .footer-mobile p,
+  .footer-mobile a {
+    margin: 5px 0;
+    color: rgb(255, 255, 255, 0.5);
+    text-decoration: none;
+  }
+
+  .footer-mobile .footer-section {
+    border: none;
+    padding: 5px 0;
+  }
+  .main-text h2 {
+    font-size: 0.7em; /* h2의 폰트 크기를 1em으로 줄임 */
+  }
+  .main-text h1 {
+    font-size: 1.2em;
+  }
+  .main-text {
+    padding: 20px;
+  }
+ 
+  .third-image {
+    width: 55vw;
+    height: 40vw;
+    margin-left: 25vw;
+    padding: 20px;
+  }
+
+  
+}
+.menu-overlay .menu-social-icons img {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+}
+.menu-social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+
+.no-underline {
+  text-decoration: none;
+}
+/* 로고를 숨기는 클래스 */
+.logo.hidden {
+  display: none;
+}
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 0 20px;
+      }
+
+      /* 프로젝트 섹션 스타일 */
+      .project-section {
+        margin: 50px 0;
+        padding: 20px;
+        position: relative;
+      }
+
+      /* 번호 박스와 가로선을 포함한 스타일 수정 */
+      .project-section .number-box {
+        display: flex;
+        align-items: center;
+      }
+
+      .project-section .number-box .number {
+        background-color: #014d39;
+        color: white;
+        padding: 10px 15px;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .project-section .number-box::after {
+        content: '';
+        flex: 1;
+        height: 2px;
+        background-color: #014d39;
+        margin-top: 45px;
+      }
+
+      /* 기타 스타일 */
+      .project-section .title {
+        font-size: 2em;
+        color: #014d39;
+        margin-bottom: 20px;
+      }
+
+      .project-section .description {
+        font-size: 1.3em;
+        margin-bottom: 30px;
+        color: #087c5d;
+        margin-left: 38vW;
+        margin-top: 80px;
+      }
+
+      .project-section .more-button {
+        background-color: #014d39;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 20px;
+      }
+
+      /* 이미지 및 텍스트 섹션 배치 */
+      .project-content {
+        display: flex;
+        align-items: center;
+      }
+
+      .project-content img {
+        width: 58%;
+        margin-left: 20px;
+        border-radius: 10px;
+      }
+
+      .project-content .text-content {
+        width: 50%;
+        margin-bottom: 480px;
+      }
+
+      .project-section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+
+      /* 두 번째 섹션의 동영상 */
+      .video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40vW;
+      }
+
+      .video iframe {
+        width: 180%;
+        height: 600px;
+        border-radius: 10px;
+      }
+
+      /* 두 번째 섹션에서 텍스트 조정 */
+      .project-section:nth-of-type(2) h2.title {
+        margin-top: 100px;
+      }
+
+      .project-section:nth-of-type(2) .description {
+        margin-top: 0;
+        margin-bottom: 60px;
+      }
+
+      /* 미디어 쿼리: 반응형 디자인 */
+      @media (max-width: 1024px) {
+        /* 1024px 이하일 때 레이아웃 조정 */
+        .project-content {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .project-content img {
+          width: 100%;
+          margin-left: 0;
+          margin-top: 20px;
+        }
+
+        .project-content .text-content {
+          width: 100%;
+          margin-bottom: 20px;
+          order: -1;
+        }
+
+        .project-section img {
+          width: 100%;
+          height: auto;
+          border-radius: 5px;
+        }
+
+        .video {
+          justify-content: center;
+          margin-left: 0;
+        }
+
+        .video iframe {
+          width: 100%;
+          height: 400px;
+        }
+
+        .project-section .description {
+          margin-left: 0;
+          padding: 10px;
+          text-align: center;
+          order: -2;
+          font-size: 1em;
+        }
+
+        .project-section .title {
+          font-size: 1.4em;
+          order: -3;
+        }
+      }
